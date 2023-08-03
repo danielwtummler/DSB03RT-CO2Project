@@ -10,7 +10,7 @@ PAGE_CONFIG = {"page_title"             : "CO2 Emissions Model - Streamlit",
 
 def read_data():
 
-    df = pd.read_csv(filepath_or_buffer = "../sources/emisiones.csv")
+    df = pd.read_csv(filepath_or_buffer = "/sources/emisiones.csv")
 
     return df
 
@@ -20,13 +20,13 @@ def load_model(fuel_type):
 
     fuel_type = fuel_type.replace(" ", "_")
 
-    with open(file = f"../sources/model_{fuel_type}.pkl", mode = "br") as file:
+    with open(file = f"/sources/model_{fuel_type}.pkl", mode = "br") as file:
         model = pickle.load(file)
 
-    with open(file = f"../sources/x_scaler_{fuel_type}.pkl", mode = "br") as file:
+    with open(file = f"/sources/x_scaler_{fuel_type}.pkl", mode = "br") as file:
         x_scaler = pickle.load(file)
 
-    with open(file = f"../sources/y_scaler_{fuel_type}.pkl", mode = "br") as file:
+    with open(file = f"/sources/y_scaler_{fuel_type}.pkl", mode = "br") as file:
         y_scaler = pickle.load(file)
 
     return model, x_scaler, y_scaler
