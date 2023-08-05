@@ -11,7 +11,7 @@ PAGE_CONFIG = {"page_title"             : "CO2 Emissions Model - Streamlit",
 
 def read_data():
 
-    df = pd.read_csv(filepath_or_buffer = "sources\emisiones.csv")
+    df = pd.read_csv(filepath_or_buffer = "sources/emisiones.csv")
 
     return df
 
