@@ -7,9 +7,9 @@ from about import about
 
 from modules.funciones_ml import PAGE_CONFIG
 
-st.set_page_config(**PAGE_CONFIG)
-
 def main():
+
+    st.set_page_config(**PAGE_CONFIG)
 
     menu = ["Main App", "Exploratory Data Analysis", "Machine Learning Model", "About"]
 
