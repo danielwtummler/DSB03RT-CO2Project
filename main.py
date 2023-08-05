@@ -1,9 +1,9 @@
 import streamlit as st
 
-from page_app import page_app_func
-from ml import ml
-from eda import eda
-from about import about
+from .page_app import page_app_func
+from .ml import ml
+from .eda import eda
+from .about import about
 
 from modules.funciones_ml import PAGE_CONFIG
 
